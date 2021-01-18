@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Личный сайт Розалии Садыковой</title>
+	<link rel="stylesheet" href="style.css">
+	
+	<script type="text/javascript">
+
+		var answer = parseInt(Math.random()*100);
+		var tryCount1=0;
+		var tryCount2=0;
+		var maxTryCount=6;
+		var gamer=1;
+		function readInt()
+		{
+			var number = document.getElementById("userAnswer").value;
+			return parseInt(number);
+		}
+		function write(text){
+			document.getElementById("info").innerHTML = text;
+		}
+		function hide(id){
+			document.getElementById(id).style.display="none"
+		}
+		function guess(){
+			
+					tryCount1++; 
+			
+			
+				
+			
+			var userAnswer=readInt();
+			if(userAnswer==answer){
+				
+					write(" Поздравляю, Вы выиграли!");
+				
+				hide("button");
+				hide("userAnswer");}
+			 else if(tryCount1>=maxTryCount) {
+					write("К сожалению, вы проиграли. Правильный ответ: " + answer);
+					hide("button");
+					hide("userAnswer");
+			}
+			else if (userAnswer<answer){
+				write("Вы ввели слишком маленькое число. Попробуйте еще!")
+			}
+			else if (userAnswer>answer){
+				write("Вы ввели слишком большое число! Попробуйте еще!")
+			}
+		
+			
+		}
+		
+	</script>
+</head>
+<body>
+
+<div class="content">
+	<div class="header">
+			<a href="index.html">Главная</a>
+		<a href="puzzle.html">Загадки</a>
+		<a href="guess.html">Угадайка</a>
+		<a href="img.html">Фото </a>
+		<a href="animation.html">Animation</a>
+		<a href="zmeyka.html">Shake</a>
+	</div>
+<div class="contentWrap">
+   <div class="content">
+        <div class="center">
+			<h1>Игра угадайка</h1>
+			<div class="box">
+
+				<p id="info">Программа загадала число от 0 до 100. Попробуйте его отгадать. </p>
+				<input type="text" id="userAnswer">
+				<br>
+				<a href="#" onClick="guess();" id="button">Ответить</a>
+
+			</div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="footer">
+	Copyright &copy; Ro Sadykova
+</div>
+
+</body>
+</html>
