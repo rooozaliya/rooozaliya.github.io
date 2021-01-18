@@ -1,0 +1,495 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+img, ins, kbd, q, s, samp,
+small, strike, strong,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+}
+body {
+line-height: 1;
+min-height: 1300px;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+
+
+
+
+
+
+html{
+
+width: 100%;
+height: 1700px;
+background: #F4F4F6;
+}
+
+.rectangle1{
+	 width: auto;
+position: relative;
+widows: 100%;
+height: 70px;
+left: 0px;
+top: 0px;
+background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+
+.circle2{
+position: absolute;
+left: 140px;
+top: 15px;
+
+}
+
+.left2{
+position: absolute;
+left: 9.41px;
+top: 15.29px;
+
+
+
+}
+
+.right2{
+
+position: absolute;
+left: 21.47px;
+top: 15.29px;
+}
+
+.toxin{
+position: absolute;
+width: 53.19px;
+height: 12.95px;
+left: 192.5px;
+top: 28.33px;
+}
+
+.menu{
+position: absolute;
+left: 530px;
+top: 26px;
+ width: auto;
+}
+.menu ul li{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+display: inline; /*чтобы выстроить список по горизонтали*/
+margin-right: 20px;
+color: rgba(31, 32, 65, 0.5);
+}
+ul li .hov{
+font-weight: bold;
+color: rgba(31, 32, 65, 0.75);
+display: inline; /*чтобы выстроить список по горизонтали*/
+
+
+}
+
+.buttons{
+position: absolute;
+left: 997px;
+top: 18px;
+}
+
+.enter{
+position: absolute;
+width: 47px;
+height: 15px;
+left: 20px;
+top: 9px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+text-transform: uppercase;
+color: #BC9CFF;
+}
+
+.button2{
+position: absolute;
+left: 1104px;
+top: 18px;
+}
+
+.log{
+position: absolute;
+width: 157px;
+height: 15px;
+left: 19px;
+top: 9px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.mainscreen{
+position: absolute;
+width: 1534px;
+min-height: 900px;
+left: -47px;
+top: -61px;
+z-index: -1;
+background: url(img/image.png);
+
+}
+
+.card1{
+position: relative;
+width: 380px;
+height: 374px;
+left: 187px;
+top: 201px;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
+
+.cardtext{
+position: absolute;
+width: 320px;
+height: 60px;
+left: 30px;
+top: 40px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+color: #1F2041;
+}
+
+.arrival{
+position: absolute;
+width: 150px;
+height: 65px;
+left: 30px;
+top: 120px;
+}
+
+.textarrival, .textleave, .textguests{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+text-transform: uppercase;
+color: #1F2041;
+}
+
+.textboxarrival, .textboxleave{
+position: absolute;
+width: 150px;
+height: 44px;
+top: 20.44px;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px
+}
+
+.textboxarrival p, .textboxleave p , .textboxguests p{
+position: absolute;
+left: 15px;
+top: 11.56px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+color: rgba(31, 32, 65, 0.75);
+}
+
+input::-webkit-input-placeholder {
+position: absolute;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+color: rgba(31, 32, 65, 0.75);
+}
+
+
+.expand{
+position: absolute;
+right: 11px;
+top: 17px;
+}
+
+.leave{
+position: absolute;
+width: 150px;
+height: 65px;
+left: 200px;
+top: 120px;
+
+}
+
+.guests{
+position: absolute;
+width: 320px;
+height: 64.56px;
+left: 30px;
+top: 205px;
+}
+
+.textboxguests{
+position: absolute;
+width: 320px;
+height: 44px;
+left: 0px;
+top: 20px;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.choosenumber{
+position: absolute;
+width: 320px;
+height: 44px;
+left: 30px;
+top: 300px;
+
+}
+
+.but{
+width: 320px;
+height: 44px;
+}
+
+.choosenumber p{
+position: absolute;
+width: 280px;
+height: 15px;
+left: 18px;
+top: 14px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+
+}
+
+.textt{
+position: absolute;
+width: 297px;
+height: 48px;
+left: 1009px;
+top: 764px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+text-align: right;
+color: rgba(31, 32, 65, 0.75);
+
+}
+
+
+.rectangle3{
+position: relative;
+widows: 100%;
+height: 372px;
+top: 770px;
+background: #FFFFFF;
+box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1)
+}
+
+.about{
+position: absolute;
+width: 260px;
+height: 132px;
+left: 140px;
+top: 100px;
+}
+
+.circle3{
+position: absolute;
+left: 0px;
+top: 0px;
+
+}
+
+
+.toxin2{
+position: absolute;
+width: 53.19px;
+height: 12.95px;
+left: 52.5px;
+top: 13.33px;
+}
+
+.text{
+position: absolute;
+height: 72px;
+top: 60px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+color: rgba(31, 32, 65, 0.75);
+}
+
+.nav{
+position: absolute;
+width: 143px;
+height: 168px;
+left: 440px;
+top: 104px;
+}
+
+.nav ul, .aboutUs ul, .support ul , .subcribe ul{
+top: 0px;
+position: absolute;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: rgba(31, 32, 65, 0.5);
+
+}
+
+.nav  li, .aboutUs li, .support li, .subcribe li{
+margin-bottom: 20px;
+}
+ul li .hov2{
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+text-transform: uppercase;
+color: #1F2041;
+}
+
+.aboutUs{
+position: absolute;
+width: 108px;
+height: 168px;
+left: 640px;
+top: 104px;
+}
+
+.support{
+
+position: absolute;
+width: 149px;
+height: 130px;
+left: 840px;
+top: 104px;
+}
+
+.subcribe{
+
+position: absolute;
+width: 260px;
+height: 84px;
+left: 1040px;
+top: 104px;
+
+}
+
+.email{
+position: absolute;
+width: 260px;
+height: 44px;
+left: 1040px;
+top: 208px;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.textEmail{
+position: absolute;
+left: 15px;
+top: 10px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+color: rgba(31, 32, 65, 0.25);
+}
+
+.arrow{
+position: absolute;
+left: 222px;
+top: 12px;
+}
+
+.footer{
+position: absolute;
+width: 100%;
+height: 70px;
+left: 0px;
+top: 373px;
+background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.copy{
+position: absolute;
+left: 140px;
+top: 26px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: rgba(31, 32, 65, 0.75);
+}
+
+.logs{
+position: absolute;
+left: 1188px;
+top: 23px;
+}
+
+.ss img {
+margin-right: 20px;
+}
+
