@@ -1,0 +1,578 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+img, ins, kbd, q, s, samp,
+small, strike, strong,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+
+
+
+
+
+
+html{
+
+width: 100%;
+height: 1700px;
+background: #F4F4F6;
+}
+
+.btn-enter1{
+    margin-left: 100px;
+}
+
+
+.circle{
+position: relative;
+
+width: 88px;
+height: 48px;
+left: 30px;
+top: 30px;
+}
+
+.left1{
+position: absolute;
+width: 14.12px;
+height: 14.12px;
+left: 11.29px;
+top: 18.35px;
+}
+
+.right1{
+position: absolute;
+width: 10.94px;
+height: 7.09px;
+left: 25.77px;
+top: 18.35px;
+}
+
+
+.rectangle1{
+position: relative;
+widows: 100%;
+height: 70px;
+left: 0px;
+top: 140px;
+background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+
+.circle2{
+position: absolute;
+left: 140px;
+top: 15px;
+
+}
+
+.left2{
+position: absolute;
+left: 9.41px;
+top: 15.29px;
+
+
+}
+
+.right2{
+
+position: absolute;
+left: 21.47px;
+top: 15.29px;
+}
+
+.toxin{
+position: absolute;
+width: 53.19px;
+height: 12.95px;
+left: 192.5px;
+top: 28.33px;
+}
+
+
+
+
+
+.menu{
+position: absolute;
+left: 530px;
+top: 26px;
+}
+.menu ul li{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+display: inline; /*чтобы выстроить список по горизонтали*/
+margin-right: 20px;
+color: rgba(31, 32, 65, 0.5);
+}
+ul li .hov{
+font-weight: bold;
+color: rgba(31, 32, 65, 0.75);
+display: inline; /*чтобы выстроить список по горизонтали*/
+
+
+}
+ .buttons{
+	border: 2px solid #BC9CFF;
+	border-radius: 50px;
+	padding: 9px 20px;
+	text-transform: uppercase;
+}
+
+#enter{
+	font-weight: bold;
+	line-height: 15px;
+	color: #BC9CFF;
+	font-size: 12px;
+
+}
+
+#login{
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	color:white;
+	line-height: 15px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+
+
+
+.rectangle2{
+position: relative;
+widows: 100%;
+height: 70px;
+left: 0px;
+top: 250px;
+background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+
+.devil{
+position: absolute;
+top:20px;
+left: 1179px;
+background: rgba(31, 32, 65, 0.1);
+}
+
+
+.menu2{
+position: absolute;
+left: 712px;
+top: 26px;
+}
+
+.menu2 ul li{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+display: inline; /*чтобы выстроить список по горизонтали*/
+margin-right: 20px;
+color: rgba(31, 32, 65, 0.5);
+}
+
+.user{
+position: absolute;
+width: 100px;
+height: 18px;
+left: 1200px;
+top: 26px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: rgba(31, 32, 65, 0.5);
+}
+
+
+.rectangle3{
+position: relative;
+widows: 100%;
+height: 372px;
+top: 360px;
+background: #FFFFFF;
+box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1)
+}
+
+.about{
+position: absolute;
+width: 260px;
+height: 132px;
+left: 140px;
+top: 100px;
+}
+
+.circle3{
+position: absolute;
+left: 0px;
+top: 0px;
+
+}
+
+
+.toxin2{
+position: absolute;
+width: 53.19px;
+height: 12.95px;
+left: 52.5px;
+top: 13.33px;
+}
+
+.text{
+position: absolute;
+height: 72px;
+top: 60px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+color: rgba(31, 32, 65, 0.75);
+}
+
+.nav{
+position: absolute;
+width: 143px;
+height: 168px;
+left: 440px;
+top: 104px;
+}
+
+.nav ul, .aboutUs ul, .support ul , .subcribe ul{
+top: 0px;
+position: absolute;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: rgba(31, 32, 65, 0.5);
+
+}
+
+.nav  li, .aboutUs li, .support li, .subcribe li{
+margin-bottom: 20px;
+}
+ul li .hov2{
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+text-transform: uppercase;
+color: #1F2041;
+}
+
+.aboutUs{
+position: absolute;
+width: 108px;
+height: 168px;
+left: 640px;
+top: 104px;
+}
+
+.support{
+
+position: absolute;
+width: 149px;
+height: 130px;
+left: 840px;
+top: 104px;
+}
+
+.subcribe{
+
+position: absolute;
+width: 260px;
+height: 84px;
+left: 1040px;
+top: 104px;
+
+}
+
+.email{
+position: absolute;
+width: 260px;
+height: 44px;
+left: 1040px;
+top: 208px;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.textEmail{
+position: absolute;
+left: 15px;
+top: 10px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+color: rgba(31, 32, 65, 0.25);
+}
+
+.arrow{
+position: absolute;
+left: 222px;
+top: 12px;
+}
+
+.footer{
+position: absolute;
+width: 100%;
+height: 70px;
+left: 0px;
+top: 373px;
+background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.copy{
+position: absolute;
+left: 140px;
+top: 26px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: rgba(31, 32, 65, 0.75);
+}
+
+.logs{
+position: absolute;
+left: 1188px;
+top: 23px;
+}
+
+.ss img {
+margin-right: 20px;
+}
+
+.rectangle4{
+position: relative;
+width: 768px;
+height: 367px;
+left: 336px;
+top: 580px;
+background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+}
+
+.circle4{
+position: absolute;
+left: 331px;
+top: 120px;
+}
+
+.toxin3 {
+position: absolute;
+width: 53.19px;
+height: 12.95px;
+left:383.5px;
+top:133.33px;
+}
+
+.textinf{
+
+position: absolute;
+width: 560px;
+height: 18px;
+left: 104px;
+top: 180px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+
+/* Dark 75% */
+
+color: rgba(31, 32, 65, 0.75);
+}
+
+.logs3{
+position: relative;
+left: 328px;
+top: 223px;
+
+}
+
+/*-----------ВТОРАЯ СТРАНИЦА------------*/
+.card1{
+position: relative;
+width: 380px;
+height: 374px;
+left: 187px;
+top: 201px;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
+
+.card1 p{
+position: absolute;
+margin:30px 40px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+color: #1F2041;
+}
+
+
+.arrival{
+position: absolute;
+width: 150px;
+height: 65px;
+left: 30px;
+top: 120px;
+}
+
+.textarrival, .textleave, .textguests{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+text-transform: uppercase;
+color: #1F2041;
+}
+
+.textboxarrival, .textboxleave{
+position: absolute;
+width: 150px;
+height: 44px;
+top: 20.44px;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px
+}
+
+::-webkit-input-placeholder {
+	font-family: Montserrat;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(31, 32, 65, 0.75);
+
+}
+
+
+.expand{
+position: absolute;
+right: 11px;
+top: 17px;
+}
+
+.leave{
+position: absolute;
+width: 150px;
+height: 65px;
+left: 200px;
+top: 120px;
+
+}
+
+.guests{
+position: absolute;
+width: 320px;
+height: 64.56px;
+left: 30px;
+top: 205px;
+}
+
+.textboxguests{
+position: absolute;
+width: 320px;
+height: 44px;
+left: 0px;
+top: 20px;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+
+
+#choose{
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	color:white;
+	line-height: 15px;
+	font-weight: bold;
+	font-size: 12px;
+	width: 280px;
+	text-align: center;
+	font-family: Montserrat;
+	
+position: absolute;
+top:300px;
+left:30px;
+font-style: normal;
+
+}
+
+
+.choosenumber{
+
+
+
+}
+
+.but{
+width: 320px;
+height: 44px;
+}
+
+
+
+.arrow2{
+position: absolute;
+width: 44px;
+height: 44px;
+left: 276px;
+top: 450px;
+color: #FFFFFF;
+}
