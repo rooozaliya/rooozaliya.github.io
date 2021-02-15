@@ -1,9 +1,9 @@
 # rooozaliya.github.io
 Садыкова Розалия
 
-[Сайт по выбору гостиницы](https://rooozaliya.github.io/git/page1.html)"Не доработан"
+[Сайт по выбору гостиницы - не адаптивный](https://rooozaliya.github.io/git/page1.html)"Не доработан"
 
-[для мобильных телефонов ](https://rooozaliya.github.io/mob/page1.html)
+[Сайт по выбору гостиницы - адаптивный ](https://rooozaliya.github.io/mob/page1.html)
 
 [Онлайн магазин](https://rooozaliya.github.io/market/index.html)"Функционала нет"
 
