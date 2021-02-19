@@ -10,4 +10,4 @@
 [Личная страинца с простыми игрушками](https://rooozaliya.github.io/personalPage/index.html)
 
 
-[чтоыб проверить](https://rooozaliya.github.io/testing/index.html)
+[чтобы проверить](https://rooozaliya.github.io/testing/index.html)
