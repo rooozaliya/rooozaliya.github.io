@@ -1,0 +1,164 @@
+/*/* reset css */
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+img, ins, kbd, q, s, samp,
+small, strike, strong,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit
+    ;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin:0 auto;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    background:url(img/1.png);
+    background-size: cover;
+}
+
+
+.slide{
+
+
+}
+
+.header-logo-png{
+    padding-top:30px;
+    margin-left: 0;
+}
+
+.group{
+    position: relative;
+    top:295px;
+   /* left:260px;*/
+}
+
+
+.intro-title{
+    font-style:normal;
+    font-size:96px;
+    font-weight: 500; 
+    line-height: 110%;
+    color:white;
+    width:960px;
+}
+.intro-ontitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color:#0ED984;
+    border-bottom: 3px solid #0ED984;
+    width:85px;
+
+}
+
+.intro-subtitle{
+    padding-top:45px;
+    width: 600px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 125%;
+    color: #FFFFFF;
+
+}
+
+.button{
+position: absolute;
+left: 1190px;
+top:270px;
+border: 2px dashed #FFFFFF;
+box-sizing: border-box;
+font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 120%;
+color: #FFFFFF;
+text-align: center;
+padding: 18px 50px;
+
+}
+
+.button:hover{
+    border: 10px dashed #FFFFFF;
+}
+
+
+.left{
+    display: block;
+     position: relative;
+     width: 40px;
+      height: 40px;
+      border-top: 4px solid white;
+      border-right: 4px solid white;
+      float:left;
+      margin:415px 65px;
+      opacity: 0.25;
+       transform: rotate(-135deg);
+}
+
+.left:hover{
+border-top: 4px solid black;
+border-right: 4px solid black;
+ opacity: 1;
+}
+
+
+.right{
+    display: block;
+     position: relative;
+     width: 40px;
+      height: 40px;
+      border-top: 4px solid white;
+      border-right: 4px solid white;
+      /*margin-left: 1750px;*/
+      float:right;
+      margin:415px 65px;
+
+      opacity: 0.25;
+      transform: rotate(45deg);
+}
