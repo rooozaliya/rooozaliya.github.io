@@ -45,7 +45,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
-.container{
+/*.container{
     width: 100%;
     max-width: 1400px;
     margin:0 auto;
@@ -61,19 +61,50 @@ body{
 .slide{
 
 
+}*/
+body{
+width: 100%;
+height: 100vh;
+background-image: url(img/1.png);
+background-position: center center;
+background-repeat: no-repeat; 
+background-size: cover;
+
 }
 
+
+.page{
+    width: 100%;
+   /* position: fixed;*/
+    height:100vh;
+/*    left: 0px;
+    top: 0px;*/
+
+}
+
+
 .header-logo-png{
-    padding-top:30px;
-    margin-left: 0;
+    margin-top:70px;
+    margin-left: 260px;
 }
 
 .group{
     position: relative;
-    top:295px;
+    margin-top:295px;
+     margin-left: 260px;
    /* left:260px;*/
 }
 
+.text{
+/*min-width: 960px;
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 0;*/
+display: inline-block;
+min-width: 100px;
+max-width: 100%;
+
+}
 
 .intro-title{
     font-style:normal;
@@ -81,7 +112,7 @@ body{
     font-weight: 500; 
     line-height: 110%;
     color:white;
-    width:960px;
+ /*   width:960px;*/
 }
 .intro-ontitle{
     font-style: normal;
@@ -89,9 +120,10 @@ body{
     font-size: 20px;
     line-height: 120%;
     color:#0ED984;
-    border-bottom: 3px solid #0ED984;
-    width:85px;
-
+    width: 100%;
+      height: 100%;
+     margin-bottom: 5px;
+      border-bottom: 3px solid #0ED984;
 }
 
 .intro-subtitle{
@@ -107,9 +139,11 @@ body{
 }
 
 .button{
-position: absolute;
-left: 1190px;
-top:270px;
+display: inline-block;
+/*position: relative;*/
+float:right;
+margin-top: 265px;
+/*margin:0px 40px;*/
 border: 2px dashed #FFFFFF;
 box-sizing: border-box;
 font-family: Ubuntu;
