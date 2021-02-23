@@ -9,7 +9,4 @@
 
 [Личная страинца с простыми игрушками](https://rooozaliya.github.io/personalPage/index.html)
 
-
-[чтобы проверить](https://rooozaliya.github.io/testing/index.html)
-
 [тестовое задание](https://rooozaliya.github.io/lol/index.html)
