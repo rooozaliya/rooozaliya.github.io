@@ -1,7 +1,7 @@
 # rooozaliya.github.io
 Садыкова Розалия
 
-[Сайт по выбору гостиницы - не адаптивный](https://rooozaliya.github.io/git/page1.html)"Не доработан"
+[тестовое задание](https://rooozaliya.github.io/lol/index.html)
 
 [Сайт по выбору гостиницы - адаптивный ](https://rooozaliya.github.io/mob/page1.html)
 
@@ -9,4 +9,4 @@
 
 [Личная страинца с простыми игрушками](https://rooozaliya.github.io/personalPage/index.html)
 
-[тестовое задание](https://rooozaliya.github.io/lol/index.html)
+
