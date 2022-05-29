@@ -11,5 +11,5 @@
 
 [Личная страинца с простыми игрушками](https://rooozaliya.github.io/personalPage/index.html)
 
-[Тестовое задание](https://rooozaliya.github.io/testApi/index.html)
+[Тестовое задание Котята](https://rooozaliya.github.io/testApi/index.html) "Загрузка изображений идёт с некоторой задержкой из-за больших объемов"
 
