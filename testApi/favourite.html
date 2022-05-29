@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   </head>
 
   <style>
@@ -73,11 +73,11 @@
         position: absolute;
         bottom:10px;
         right:0;
-        background: url(Vector.png) no-repeat;
+        background: url(VectorClick.png) no-repeat;
       }
 
       .like:hover{
-        background: url(Vectorfull.png) no-repeat;
+        background: url(VectorClick.png) no-repeat;
         display: block;
         box-shadow: none;
       }
@@ -92,62 +92,60 @@
       .theme--light.v-btn {
         color: rgba(0,0,0,0);
 }
-
-  </style>
+</style>
   <body>
-   
-
+    
   <div id="app">
     <v-app>
-       
       <v-content>
-        <!-- <v-card> -->
             <div class="navBar">
-                <ul id="navBarLinks" >
-                    <a class="navBarLink active " href="index.html" onclick="MyFunc()" >Все котики</a>
-                    <a class="navBarLink" href="favourite.html">Любимые котики</a>
-                </ul>
-                
+                <li id="navBarLinks" >
+                    <a class="navBarLink " href="index.html">Все котики</a>
+                    <a class="navBarLink active" href="favourite.html" onclick="MyFunc()">Любимые котики</a>
+                </li>  
             </div>
-            
-             
-        <v-container grid-list-sm fluid>
+        
+            <v-container grid-list-sm fluid>
             <v-layout row wrap>
                 <v-flex
-                    v-for="n in images" :§="n.id" >
+                    v-for="n in favourites"
+                    :§="n.id">
                     <v-layout>
-                        <div class="ram">
+                            <v-flex>
+                              <div class="ram">
                                 <div class="imgs " id="hideBl" >
-                                    <v-img
-                                        :src="n.url"
-                                        lazy-src="https://picsum.photos/10/6"
-                                        height="225px"
-                                        width="225px"
-                                      
-                                        >
-                                        <v-card-actions style="padding:0px" >
-                                        <v-btn id="like" class="like"  @click=" favouriteImage(n.id)" onclick="className+= ' actived' " >  </v-btn>
-                                                
-                                          
-                                            
-                                        </v-card-actions>
-                                    </v-img>
-                                </div>
-                        </div>
-
-                           
-                        
-                    </v-layout>
+                                <v-img
+                                  :src="n.image.url"
+                                  height="225px"
+                                  width="225px"
+                                >
+                                <v-card-actions style="padding:0px">
+                                  <v-btn  id="like" class="like" @click="deleteFavouriteImage(n.id)"> </v-btn>
+                                </v-card-actions>
+                              </v-img>
+                              </div>
+                            </div>
+                            </v-flex>
+                          </v-layout>
                 </v-flex>
-            </v-layout>                
+            </v-layout>
+            <br>
+                
         </v-container>
-        <!-- </v-card> -->
+     
       </v-content>
     </v-app>
   </div>
  
   <script>
 
+function MyFunc(e) {
+  var elems = document.querySelector(".active");
+  if(elems !==null){
+   elems.classList.remove("active");
+  }
+ e.target.className = "active";
+}
     new Vue({ 
         el: '#app',
         vuetify: new Vuetify(),
@@ -156,63 +154,49 @@
           favourites:[],
           page: 1,
           error_message:null,
-          limit: 50,
-          pagination_count: 0, 
+          limit: 100,
+          pagination_count: 0,
         },
         created(){
-                    axios.defaults.headers.common['x-api-key'] = "DEMO-API-KEY"
-            this.getImages();
+
+                axios.defaults.headers.common['x-api-key'] = "DEMO-API-KEY" 
+                this.getFavourites()
         } ,
-
         methods:{
-
-            async getImages()
+            async getFavourites()
             {
                 try{
                     let query_params = {
-                        limit: this.limit
+                        limit: this.limit,
+                        order: 'DESC',
+                        sub_id:"User",
                     }
-                    let response = await axios.get('https://api.thecatapi.com/v1/images/search', { params: query_params } ) 
-                    this.images = response.data 
-
+                    let response = await axios.get('https://api.thecatapi.com/v1/favourites', { params: query_params } ) 
+                    this.favourites = response.data 
+                    this.pagination_count = response.headers['pagination-count'];
+                    this.clearError();
                 }catch(err){
                     console.log(err)
                 }
             },
-            async favouriteImage(image_id)
-            {  
-               
-
+            async deleteFavouriteImage(favourite_id)//this is not the image id
+            {
                 try{
-                    let post_body = {
-                        image_id: image_id,
-                        sub_id:"User"
-                    }
-                   
-                    let response = await axios.post('https://api.thecatapi.com/v1/favourites', post_body ) 
-                    this.getFavourites();
-                }catch(error){
-                    console.log(error);
-                  
-                    this.error_message = error.response.data.message
+                
+                    let response = await axios.delete('https://api.thecatapi.com/v1/favourites/'+favourite_id ) 
+                    this.favourites = response.data 
+                    this.page = 1;
+                    this.getFavourites()
+                }catch(err){
+                    console.log(err)
                 }
             },
             async clearError()
             {
                 this.error_message = null
-             
-            },
-
+            }
         }
-        
     })
-    function MyFunc(e) {
-  var elems = document.querySelector(".active");
-  if(elems !==null){
-   elems.classList.remove("active");
-  }
- e.target.className = "active";
-} 
   </script>
 </body>
 </html>
