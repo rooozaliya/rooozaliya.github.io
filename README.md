@@ -1,5 +1,7 @@
 # rooozaliya.github.io
 Садыкова Розалия
+ # На данный момент ссылки недоступны.
+
 
 [тестовое задание](https://rooozaliya.github.io/lol/index.html)
 
